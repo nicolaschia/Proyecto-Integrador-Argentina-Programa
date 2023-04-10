@@ -34,6 +34,9 @@
             <li class="nav-item mx-lg-4">
               <a class="nav-link text-white text-center" href="/pages/peticion/peticion.html">Petición</a>
             </li>
+            <li class="nav-item mx-lg-4">
+              <a class="nav-link text-white text-center" href="/pages/reseña/reseña.html">Tu reseña</a>
+            </li>
             </ul>
   
             <ul class="navbar-nav container-lg nav-list me-auto mb-2 mb-lg-0 nav-lg">
@@ -49,6 +52,9 @@
               <li class="nav-item mx-lg-4 header-item">
                 <a class="nav-link text-dark text-center btn btn-light" href="/pages/peticion/peticion.html">Petición</a>
               </li>
+              <li class="nav-item mx-lg-4 header-item">
+                <a class="nav-link text-dark text-center btn btn-light" href="/pages/reseña/reseña.html">Tu reseña</a>
+              </li>
               </ul>
          
         </div>
@@ -56,66 +62,111 @@
     </nav>
   </header>
   
-    <h1>Contacto nexus</h1>
-  
-    <footer class=" bg-dark bg-opacity-75 fixed-bottom">
+   <div class="container contenido">
+    <div class="row">
+      <div class="p-2 bg-black bg-opacity-25 text-white border-color fw-bold  text-center m-1 font  ">
+        <h1 class="fw-bold">Contáctanos</h1>
+      <p> Si deseas consultar mayor información sobre películas o tienes alguna duda al respecto de nuestros servicios de streaming, <br> puedes recibir una consulta gratuita por nuestros medios de comunicación. <br><br>
+
+        Contáctanos vía WhatsApp +549 115698478
+        <br>
+            Av 9 Julio 380 - Buenos Aires - Capital</p>
+    </div>
     
-      <div class="container p-2">
-      
-        <div class="row">
-      
-          <div class="col-12 col-md-6 col-lg-4 text-white  sm-footer-contact">
-        <img src="/assets/images/logo-nexus.png" class="img-nexus img-fluid" width="60px" alt="">
-        <span class="footer-contact">Contacto</span>
-        <br>
-        <span class="footer-contact">Tel: +549115698478</span>
-        <br>
-        <span class="footer-contact">Email: nexus_ar@gmail.com</span>
-        <br>
-        <span class="footer-contact">Av 9 de Julio 380 - Capital Federal</span>
+      <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+        <form id="registrarDatos" action="/pages/sent/sent.html" name="registrarDatos" class="row p-lg-2 p-md-2 p-sm-2 bg-black bg-opacity-25 text-white m-2 p-1">
+          <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control place-form" id="nombre" minlength="2" maxlength="25" placeholder="Ingresa tu nombre" required>
+          </div>
+          <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control place-form" id="apellido" minlength="2" maxlength="25" placeholder ="Ingresa tu apellido" required>
+          </div>
+          <div class="mb-3 col-12 col-lg-12">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control place-form" id="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="4" maxlength="25" placeholder ="Ingresa tu correo electrónico" required>
+          </div>
+          <div class="mb-3 col-12 col-lg-12">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentario o duda</label>
+          <textarea class="form-control form-floating" id="exampleFormControlTextarea1" minlength="4" maxlength="150" placeholder="Ingresa tu comentario o duda" required></textarea>
+          </div>
+          
+          <button type="submit"  class="btn btn-warning col-lg-2  place-form" >Enviar</button>
+          
+        </form>
+        
       </div>
-      
-        <div class="col-12 col-md-6 col-lg-4">
-        <h5 class="text-center text-white d-lg-none">Síguenos en Nuestras Redes!</h5>
-        <div class="logo-footer ">
-          <img src="/assets/images/logo-nexus.png" class="img-nexus-lg img-fluid mb-lg-2" width="60px" alt="">
+      <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+        
+          <img src="/assets/images/img-2.jpg"  class="img-fluid img-contact" alt="">
+          
         </div>
-        <ul class="list-unstyled mx-lg-5">
-          <li class="text-center mb-2">
-            <a href="https://www.instagram.com/" target="_blank">  
-            <i class="fa-brands fa-instagram fs-5 text-white"></i>
-            </a>
-              <a href="https://www.instagram.com/" class="text-decoration-none text-white d-lg-none">Instagram</a>
-         </li>
-         <li class="text-center mb-2">
-          <a href="https://www.facebook.com/" target="_blank"> 
-          <i class="fa-brands fa-facebook-f fs-5 text-white" ></i>
-          </a>
-          <a href="https://www.facebook.com/" class="text-decoration-none text-white d-lg-none" >Facebook</a>
-         </li>
-         <li class="text-center mb-2">
-          <a  href="https://www.youtube.com/" target="_blank"> 
-          <i class="fa-brands fa-youtube fs-5 text-white"></i> 
-          </a>
-          <a href="https://www.youtube.com/"  class="text-decoration-none text-white d-lg-none">YouTube</a>
-         </li>
-        </ul>
-        </div>
-  
-        <div class="col-12 col-md-6 col-lg-4 footer-legal ">
-          <a href="" class="text-decoration-none text-white">Aviso Legal</a>
-          <br>
-          <a href="" class="text-decoration-none text-white">Política de privacidad</a>
-          <br>
-          <a href="" class="text-decoration-none text-white">Política de cookies</a>
-          <br>
-          <a href="" class="text-decoration-none text-white">Copyright © Nexus</a>
-        </div>
-        </div>
-  
       </div>
-  
-    </footer>
+    </div>
+   </div>  
+
+   <footer class=" bg-dark  ">
+    
+    <div class="container p-2 ">
+    
+      <div class="row">
+    
+        <div class="col-12 col-md-6 col-lg-4 text-white  sm-footer-contact">
+      <img src="/assets/images/logo-nexus.png" class="img-nexus img-fluid" width="60px" alt="">
+      <span class="footer-contact">Contacto</span>
+      <br>
+      <span class="footer-contact small">Tel: +549115698478</span>
+      <br>
+      <span class="footer-contact small">Email: nexus_ar@gmail.com</span>
+      <br>
+      <span class="footer-contact small">Av 9 de Julio 380 - Capital Federal</span>
+    </div>
+    
+      <div class="col-12 col-md-6 col-lg-4">
+      <h5 class="text-center text-white d-lg-none">Síguenos en Nuestras Redes!</h5>
+      <div class="logo-footer ">
+        <img src="/assets/images/logo-nexus.png" class="img-nexus-lg img-fluid mb-lg-2" width="60px" alt="">
+      </div>
+      <ul class="list-unstyled mx-lg-5">
+        <li class="text-center mb-2">
+          <a href="https://www.instagram.com/" target="_blank">  
+          <i class="fa-brands fa-instagram fs-5 text-white"></i>
+          </a>
+            <a href="https://www.instagram.com/" class="text-decoration-none text-white d-lg-none">Instagram</a>
+       </li>
+       <li class="text-center mb-2">
+        <a href="https://www.facebook.com/" target="_blank"> 
+        <i class="fa-brands fa-facebook-f fs-5 text-white" ></i>
+        </a>
+        <a href="https://www.facebook.com/" class="text-decoration-none text-white d-lg-none" >Facebook</a>
+       </li>
+       <li class="text-center mb-2">
+        <a  href="https://www.youtube.com/" target="_blank"> 
+        <i class="fa-brands fa-youtube fs-5 text-white"></i> 
+        </a>
+        <a href="https://www.youtube.com/"  class="text-decoration-none text-white d-lg-none">YouTube</a>
+       </li>
+      </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 footer-legal  ">
+        <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Aviso Legal</a>
+        <br>
+        <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de privacidad</a>
+        <br>
+        <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de cookies</a>
+        <br>
+        <a href="" class="text-decoration-none text-white small">Copyright © Nexus</a>
+      </div>
+      </div>
+
+    </div>
+
+  </footer>
       <script src="/js/bootstrap.bundle.min.js"></script>
+      <script src="/js/script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js"></script>
 </body>
 </html>
