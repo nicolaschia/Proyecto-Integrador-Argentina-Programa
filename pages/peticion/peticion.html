@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petición</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../assets/images/logo-ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/images/logo-ico.ico" type="image/x-icon">
+    
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
-          <img src="/assets/images/logo-nexus.png"  alt="logo nexus" class="nexus-logo">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/logo-nexus.png"  alt="logo nexus" class="nexus-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="boton-hamburguesa">
           <span class="navbar-toggler-icon"></span>
@@ -23,37 +26,37 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav container-lg nav-list me-auto mb-2 mb-lg-0 d-lg-none ">
             <li class="nav-item  mx-lg-4 ">
-              <a class="nav-link active text-white text-center" aria-current="page" href="/index.html">Inicio</a>
+              <a class="nav-link active text-white text-center" aria-current="page" href="../../index.html">Inicio</a>
             </li>
             <li class="nav-item mx-lg-4">
-              <a class="nav-link text-white text-center" href="/pages/about-us/about-us.html">Sobre Nosotros</a>
+              <a class="nav-link text-white text-center" href="../about-us/about-us.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item mx-lg-4">
-              <a class="nav-link text-white text-center" href="/pages/contact/contact.html">Contacto</a>
+              <a class="nav-link text-white text-center" href="../contact/contact.html">Contacto</a>
             </li>
             <li class="nav-item mx-lg-4">
-              <a class="nav-link text-white text-center" href="/pages/peticion/peticion.html">Petición</a>
+              <a class="nav-link text-white text-center" href="../peticion/peticion.html">Petición</a>
             </li>
             <li class="nav-item mx-lg-4">
-              <a class="nav-link text-white text-center" href="/pages/reseña/reseña.html">Tu reseña</a>
+              <a class="nav-link text-white text-center" href="../reseña/reseña.html">Tu reseña</a>
             </li>
             </ul>
   
             <ul class="navbar-nav container-lg nav-list me-auto mb-2 mb-lg-0 nav-lg">
               <li class="nav-item  mx-lg-4 header-item">
-                <a class="nav-link text-dark text-center btn btn-light " aria-current="page" href="/index.html">Inicio</a>
+                <a class="nav-link text-dark text-center btn btn-light " aria-current="page" href="../../index.html">Inicio</a>
               </li>
               <li class="nav-item mx-lg-4 header-item">
-                <a class="nav-link text-dark text-center btn btn-light" href="/pages/about-us/about-us.html">Sobre Nosotros</a>
+                <a class="nav-link text-dark text-center btn btn-light" href="../about-us/about-us.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item mx-lg-4 header-item">
-                <a class="nav-link text-dark text-center btn btn-light" href="/pages/contact/contact.html">Contacto</a>
+                <a class="nav-link text-dark text-center btn btn-light" href="../contact/contact.html">Contacto</a>
               </li>
               <li class="nav-item mx-lg-4 header-item">
-                <a class="nav-link text-dark text-center btn btn-light" href="/pages/peticion/peticion.html">Petición</a>
+                <a class="nav-link text-dark text-center btn btn-light" href="../peticion/peticion.html">Petición</a>
               </li>
               <li class="nav-item mx-lg-4 header-item">
-                <a class="nav-link text-dark text-center btn btn-light" href="/pages/reseña/reseña.html">Tu reseña</a>
+                <a class="nav-link text-dark text-center btn btn-light" href="../reseña/reseña.html">Tu reseña</a>
               </li>
               </ul>
          
@@ -61,7 +64,6 @@
       </div>
     </nav>
   </header>
-  
 
   <div class="container">
 
@@ -72,26 +74,28 @@
 
       <div class="row movile-petision">
         <div class="col order-md-2 order-lg-1 d-flex flex-column justify-content-center align-items-center text-light m-1 p-1 bg-black bg-opacity-10">
-          <h3 class="fw-bold border-color bg-black bg-opacity-25 p-1 m-1 " id="step-4">Ingresar datos</h3>
           <form id="step-1" class="p-lg-3 text-center bg-black bg-opacity-25 m-1 p-1">
+          <div>
+            <h3 class="border-color" id="step-4">Ingresar datos</h3>
+          </div>
               <div class="mb-3  col-12 col-md-12 col-lg-12 border-color">
                   <label for="name">Nombre:</label>
-                  <input type="text" id="name" name="name" minlength="2" maxlength="25" placeholder="Ingresa tu nombre" required>
+                  <input type="text" id="name" name="name" minlength="2" maxlength="25" class="form-control place-form" placeholder="Ingresa tu nombre" required>
               </div>
-              <div class="mb-3 mx-2 col-12 col-md-12 col-lg-12  border-color">
+              <div class="mb-3  col-12 col-md-12 col-lg-12  border-color">
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="4" maxlength="40" placeholder ="Ingresa tu email" required>
+                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="4" maxlength="40" class="form-control place-form"  placeholder ="Ingresa tu email" required>
               </div>
               <div class="mb-3 text-center col 12 border-color">
                   <label for="coment">Nombre de la Película o Serie</label> <br>
-                  <input type="text" id="coment" name="coment"  class="form-inp w-100" minlength="2" maxlength="30"  placeholder="Ingresa la pelicula o serie" required>
+                  <input type="text" id="coment" name="coment"  class="form-inp w-100 form-control place-form" minlength="2" maxlength="30"   placeholder="Ingresa la pelicula o serie" required>
               </div>
               <button type="button" id="next-btn" class="btn btn-warning">Siguiente</button>
           </form>
       </div>
       
         <div class="col order-md-1 order-lg-2 bg-black bg-opacity-25 m-1 p-1" id="step-3" >
-            <img src="/assets/images/img-1.jpg" class="img-fluid img-petision w-100" alt="">
+            <img src="../../assets/images/img-1.jpg" class="img-fluid img-petision w-100" alt="">
         </div>
       </div>
 
@@ -107,66 +111,65 @@
   </form>
   
     
-        <footer class=" bg-dark  ">
+  <footer class=" bg-dark  ">
     
-          <div class="container p-2 ">
-          
-            <div class="row">
-          
-              <div class="col-12 col-md-6 col-lg-4 text-white  sm-footer-contact">
-            <img src="/assets/images/logo-nexus.png" class="img-nexus img-fluid" width="60px" alt="">
-            <span class="footer-contact">Contacto</span>
-            <br>
-            <span class="footer-contact small">Tel: +549115698478</span>
-            <br>
-            <span class="footer-contact small">Email: nexus_ar@gmail.com</span>
-            <br>
-            <span class="footer-contact small">Av 9 de Julio 380 - Capital Federal</span>
-          </div>
-          
-            <div class="col-12 col-md-6 col-lg-4">
-            <h5 class="text-center text-white d-lg-none">Síguenos en Nuestras Redes!</h5>
-            <div class="logo-footer ">
-              <img src="/assets/images/logo-nexus.png" class="img-nexus-lg img-fluid mb-lg-2" width="60px" alt="">
-            </div>
-            <ul class="list-unstyled mx-lg-5">
-              <li class="text-center mb-2">
-                <a href="https://www.instagram.com/" target="_blank">  
-                <i class="fa-brands fa-instagram fs-5 text-white"></i>
-                </a>
-                  <a href="https://www.instagram.com/" class="text-decoration-none text-white d-lg-none">Instagram</a>
-             </li>
-             <li class="text-center mb-2">
-              <a href="https://www.facebook.com/" target="_blank"> 
-              <i class="fa-brands fa-facebook-f fs-5 text-white" ></i>
-              </a>
-              <a href="https://www.facebook.com/" class="text-decoration-none text-white d-lg-none" >Facebook</a>
-             </li>
-             <li class="text-center mb-2">
-              <a  href="https://www.youtube.com/" target="_blank"> 
-              <i class="fa-brands fa-youtube fs-5 text-white"></i> 
-              </a>
-              <a href="https://www.youtube.com/"  class="text-decoration-none text-white d-lg-none">YouTube</a>
-             </li>
-            </ul>
-            </div>
-      
-            <div class="col-12 col-md-6 col-lg-4 footer-legal  ">
-              <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Aviso Legal</a>
-              <br>
-              <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de privacidad</a>
-              <br>
-              <a href="/pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de cookies</a>
-              <br>
-              <a href="" class="text-decoration-none text-white small">Copyright © Nexus</a>
-            </div>
-            </div>
-      
-          </div>
-      
-        </footer>
+    <div class="container p-2 ">
+    
+      <div class="row">
+    
+        <div class="col-12 col-md-6 col-lg-4 text-white  sm-footer-contact">
+      <img src="../../assets/images/logo-nexus.png" class="img-nexus img-fluid" width="60px" alt="">
+      <span class="footer-contact">Contacto</span>
+      <br>
+      <span class="footer-contact small">Tel: +549115698478</span>
+      <br>
+      <span class="footer-contact small">Email: nexus_ar@gmail.com</span>
+      <br>
+      <span class="footer-contact small">Av 9 de Julio 380 - Capital Federal</span>
+    </div>
+    
+      <div class="col-12 col-md-6 col-lg-4">
+      <h5 class="text-center text-white d-lg-none">Síguenos en Nuestras Redes!</h5>
+      <div class="logo-footer ">
+        <img src="../../assets/images/logo-nexus.png" class="img-nexus-lg img-fluid mb-lg-2" width="60px" alt="">
+      </div>
+      <ul class="list-unstyled mx-lg-5">
+        <li class="text-center mb-2">
+          <a href="https://www.instagram.com/" target="_blank">  
+          <i class="fa-brands fa-instagram fs-5 text-white"></i>
+          </a>
+            <a href="https://www.instagram.com/" class="text-decoration-none text-white d-lg-none">Instagram</a>
+       </li>
+       <li class="text-center mb-2">
+        <a href="https://www.facebook.com/" target="_blank"> 
+        <i class="fa-brands fa-facebook-f fs-5 text-white" ></i>
+        </a>
+        <a href="https://www.facebook.com/" class="text-decoration-none text-white d-lg-none" >Facebook</a>
+       </li>
+       <li class="text-center mb-2">
+        <a  href="https://www.youtube.com/" target="_blank"> 
+        <i class="fa-brands fa-youtube fs-5 text-white"></i> 
+        </a>
+        <a href="https://www.youtube.com/"  class="text-decoration-none text-white d-lg-none">YouTube</a>
+       </li>
+      </ul>
+      </div>
 
-        <script src="/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/script.js"></script>
+      <div class="col-12 col-md-6 col-lg-4 footer-legal  ">
+        <a href="../../pages/not-found/not-found.html" class="text-decoration-none text-white small">Aviso Legal</a>
+        <br>
+        <a href="../../pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de privacidad</a>
+        <br>
+        <a href="../../pages/not-found/not-found.html" class="text-decoration-none text-white small">Política de cookies</a>
+        <br>
+        <a href="" class="text-decoration-none text-white small">Copyright © Nexus</a>
+      </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/script.js"></script>
 </body>
 </html>

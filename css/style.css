@@ -1,238 +1,325 @@
 * {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Netflix+Sans&display=swap');
 
 
-  .nexus-logo{
-    width: 130px;
-  }
- 
-  #boton-hamburguesa {
-    background-color: white;
-    border-color: white;
-  }
-  
-  #boton-hamburguesa .navbar-toggler-icon {
-    color: transparent;
-  }
+.nexus-logo {
+  width: 130px;
+}
 
-  .list-unstyled {
-    list-style-type: none;
-  }
+#boton-hamburguesa {
+  background-color: white;
+  border-color: white;
+}
 
+#boton-hamburguesa .navbar-toggler-icon {
+  color: transparent;
+}
 
-  .text-about{
-    text-align:center;
-    margin-right: 20%;
-    margin-left: 20%;
-    /* background-color: rgba(0, 0, 0, 0.253); */
-    color: white;
-    
-  }
+.list-unstyled {
+  list-style-type: none;
+}
 
 
-  
+.text-about {
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* background-color: rgba(0, 0, 0, 0.253); */
+  color: white;
 
-    .card-content{
-      background-color: transparent;
-      border: none;
-      text-align: center;
-      width: ;
-    }
-    
+}
 
-  .img-card{
-    border-radius: 50%;
-  }
- 
 
-  .slide img{
-     height: 60vh;
-     object-fit: cover; 
-     
-  }
-  /* form peticion */
-  form {
-    margin-bottom: 20px;
-  }
-  
-  #step-2 {
-    display: none;
-  }
-  
-  #summary {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color:yellow;
-  }
-  .color-preview{
-    color: yellow;
-  }
-    /* ---------------------- */
+.slide img {
+  height: 60vh;
+  object-fit: cover;
 
-    .form-inp{
-      width: 90%;
-      height: 50px;
-    }
-    .font{
-      font-size: x-large;
-    }
+}
 
-    body {
-      width: 100%;
-      height: 100%;
-  
-      background: #7F7FD5;  
-  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+/* form peticion */
+form {
+  margin-bottom: 20px;
+}
+
+#step-2 {
+  display: none;
+}
+
+#summary {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: yellow;
+}
+
+.color-preview {
+  color: yellow;
+}
+
+/* ---------------------- */
+
+.form-inp {
+  width: 90%;
+  height: 50px;
+}
+
+.font {
+  font-size: x-large;
+}
+
+
+/* about us */
+.card {
+  transition: 0.1s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px #033f49;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  margin: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+
+
+}
+
+.fa-linkedin {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  margin-left: 30%;
+}
+
+.fa-twitter {
+  font-size: 3rem;
+
+}
+
+#title {
+  text-align: center;
+  font-family: 'Limelight', cursive;
+}
+
+.card-text-about {
+  height: 200px;
+  /* altura fija deseada */
+  overflow: hidden;
+}
+
+
+
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
   background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Netflix Sans', sans-serif;  
-    
-    } 
-    .border-color{
-      text-shadow: 1px 1px 0 #00000042, 
-               -1px -1px 0 #00000042, 
-               1px -1px 0 #00000042, 
-               -1px 1px 0 #00000042;
-    }
-  @media screen and (max-width: 767px) {
-   .img-nexus{
-    display: none;
-   }
-   .img-nexus-lg{
-    display: none;
-  }
-  .sm-footer-contact{
-    display: none;
-  }
-  .footer-legal{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Netflix Sans', sans-serif;
+
+}
+
+.border-color {
+  text-shadow: 1px 1px 0 #00000042,
+    -1px -1px 0 #00000042,
+    1px -1px 0 #00000042,
+    -1px 1px 0 #00000042;
+}
+
+  
+  
+
+@media screen and (max-width: 767px) {
+  .img-nexus {
     display: none;
   }
-  .nav-lg{
+
+  .img-nexus-lg {
     display: none;
   }
-  .img-contact{
+
+  .sm-footer-contact {
     display: none;
   }
-  .title-contact{
+
+  .footer-legal {
+    display: none;
+  }
+
+  .nav-lg {
+    display: none;
+  }
+
+  .img-contact {
+    display: none;
+  }
+
+  .title-contact {
     text-align: center;
-   }
-   .text-about{
+  }
+
+  .text-about {
     margin: auto;
     text-align: left;
-   }
-   .img-coca{
+  }
+
+  .img-coca {
     display: none;
-   }
-   .card-text-display{
+  }
+
+  .card-text-display {
     display: none;
-   }
-   .movile-petision{
+  }
+
+  .movile-petision {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
-   }
-   .carousel-movile{
+  }
+
+  .carousel-movile {
     display: none;
-   }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .img-nexus{
-      width: 150px;
-    }
-    .img-nexus-lg{
-      display: none;
-    }
-    .footer-contact{
-      display: none;
-    }
-    .footer-legal{
-      display: none;
-    }
-    .nav-lg{
-      display: none;
-    }
-    .img-contact{
-      display: none;
-    }
-    .place-form{
-      font-size: 14px;
-     }
-     .title-contact{
-      text-align: center;
-     }
-     .movile-petision{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      
-     }
+  .card-text-about {
+    height: 100%;
+  }
+  .aside-m {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .img-nexus {
+    width: 150px;
   }
 
-  @media screen and (min-width: 992px){
-    .img-nexus{
-      display: none;
-    }
-    .list-unstyled{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 0px 40px;
-      
-    }
-    .logo-footer{
-      display: flex;
-      justify-content: center;
-    }
-    .img-nexus-lg{
-      width: 130px;
-    }
-    .sm-footer-contact{
-      padding: 15px;
-      text-align: center;
-    }
-    .footer-legal{
-      text-align: center;
-      padding: 10px;
-    }
-   
-   .nav-list{
+  .img-nexus-lg {
+    display: none;
+  }
+
+  .footer-contact {
+    display: none;
+  }
+
+  .footer-legal {
+    display: none;
+  }
+
+  .nav-lg {
+    display: none;
+  }
+
+  .img-contact {
+    display: none;
+  }
+
+  .place-form {
+    font-size: 14px;
+  }
+
+  .title-contact {
+    text-align: center;
+  }
+
+  .movile-petision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .aside-m {
+    display: none;
+  }
+  .img-coca{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-nexus {
+    display: none;
+  }
+
+  .list-unstyled {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 40px;
+
+  }
+
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-nexus-lg {
+    width: 130px;
+  }
+
+  .sm-footer-contact {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer-legal {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-list {
     display: flex;
     flex-direction: row;
     justify-content: end;
-   }
-   .header-item{
+  }
+
+  .header-item {
     width: 130px;
-   }
-   
   }
 
+  .card-text-about {
+    height: 300px;
+  }
+}
 
-  @media screen and (min-width: 1400px){
-    .list-unstyled{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 0px 90px;
-      
-    }
+
+@media screen and (min-width: 1400px) {
+  .list-unstyled {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 90px;
+
   }
- 
-  footer{
-    margin-top: auto;
-  }
- 
+}
+
+footer {
+  margin-top: auto;
+}
+
 /*-------Conócenos---- */
 .contenido {
   margin-bottom: 60px
-}; 
+}
 
+;
